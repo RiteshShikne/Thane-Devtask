@@ -1,0 +1,584 @@
+.container {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping to the next line */
+    gap: 20px; /* Adjust the space between items as needed */
+    align-items: center; /* Center items vertically */
+}
+
+.item {
+    flex-grow: 1; /* Allow items to grow and fill available space */
+}
+
+h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    margin-bottom: 10px; /* Adjust the space between h3 and h4 */
+    font-size: 1.5em; /* Increased font size for h3 */
+}
+
+h4 {
+    font-size: 1.2em; /* Increased font size for h4 */
+}
+
+.language-selector {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.flag {
+    width: 40px; /* Increased width */
+    height: 25px; /* Increased height */
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1.2em; /* Increased font size for dropdown items */
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.navigation h3 {
+    margin: 0;
+    padding: 0;
+    margin-right: 20px; /* Adjust the space between links */
+}
+
+.navigation input[type="search"] {
+    margin-left: 20px; /* Adjust the space between the last link and the search input */
+}
+.navigation {
+    display: flex;
+    align-items: center;
+    color: white; /* Set text color to white */
+    background-color: rgb(57, 124, 231); /* Set background color to light blue */
+    padding: 10px; /* Add padding for better spacing */
+}
+
+.navigation h3 {
+    margin: 0;
+    padding: 0;
+    margin-right: 20px; /* Adjust the space between links */
+}
+
+.navigation input[type="search"] {
+    margin-left: auto; /* Push search input to the right */
+    border: none; /* Remove border */
+    padding: 5px; /* Add padding for better appearance */
+}
+
+.kneeSection {
+    background-color: rgb(54, 54, 172);
+    color: white;
+    position: relative;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.kneeSection::after {
+    content: "";
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChgGcvgQFVwAAAABJRU5ErkJggg==");
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.kneeSection h4,
+.kneeSection h2,
+.kneeSection h4,
+.kneeSection button {
+    margin-bottom: 1em;
+    padding: 0;
+}
+
+.kneeSection button {
+    background-color: rgb(72, 131, 151);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px; /* Add margin to separate button from text */
+    margin-top: 1em
+}
+
+.kneeSection img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+.kneeSection h4 span {
+    color: red; /* Set arrow color to red */
+    margin: 0 5px; /* Add space around arrows */
+}
+.navigation2 {
+    display: flex; /* Use flexbox */
+}
+
+.navigation2 h3 {
+    margin-right: 20px; /* Add spacing between the h3 elements */
+}
+.navigation input[type="search"] {
+    background-color: darkblue; /* Set the background color */
+    color: white; /* Set the text color */
+    border: none; /* Remove the border */
+    padding: 5px; /* Add padding for better appearance */
+}
+.navigation input[type="search"]::placeholder {
+    color: white; /* Set the placeholder text color */
+}
+.kneeCheck {
+    display: flex; /* Use flexbox */
+    position: relative;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.kneeCheck img {
+    margin-left: auto; /* Push the image to the right */
+    height: auto;
+    max-width: 50%; /* Ensure the image doesn't overflow */
+}
+
+.kneeCheck h4 {
+    margin: 0 0 20px 0; /* Add margin below the h4 element */
+    position: relative;
+}
+
+
+.kneeCheck h3 {
+    margin: 30 0 20px 0; /* Add margin below the h4 element */
+    position: relative;
+}
+
+.kneeCheck::after {
+    content: "";
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+.kneeCheck {
+    display: flex; /* Use flexbox */
+    position: relative;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.kneeCheck img {
+   margin: 0px -0px -0px -0px;
+   
+}
+
+.kneeCheck h3 {
+    margin: 40px 0 20px 0; /* Increase the top margin of the h3 element */
+    position: relative;
+}
+
+.kneeCheck h4 {
+    margin: 0 0 20px 0; /* Add margin below the h4 element */
+    position: relative;
+    line-height: 1.6; /* Add line height for spacing between lines */
+}
+
+.kneeCheck br + br {
+    margin-bottom: 1em; /* Add margin between consecutive br elements */
+}
+
+.kneeCheck::after {
+    content: "";
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+.dotted-hr {
+    border: 0;
+    border-top: 5px dotted rgb(101, 183, 231);
+    margin: 20px 0; /* Add margin for spacing */
+}
+
+.side-by-side {
+    display: flex;
+    justify-content: space-between; /* Space between the two divs */
+    gap: 20px; /* Gap between the sections */
+}
+
+.side-by-side > div {
+    flex: 1; /* Make sure both divs take equal space */
+}
+
+
+
+.side-by-side {
+    width: 75%; /* Take up 75% of the screen */
+    display: flex;
+    justify-content: space-between; /* Space between the two divs */
+    gap: 20px; /* Gap between the sections */
+    align-items: right;
+}
+
+
+.side-by-side {
+    width: 75%; /* Take up 75% of the screen */
+    display: flex;
+    justify-content: space-between; /* Space between the two divs */
+    gap: 20px; /* Gap between the sections */
+    align-items: flex-start; /* Align items to the top */
+}
+
+.side-by-side {
+    width: 75%; /* Take up 75% of the screen */
+    display: flex;
+    justify-content: space-between; /* Space between the two divs */
+    gap: 20px; /* Gap between the sections */
+}
+
+
+.side-by-side h3 {
+    padding: 5%;
+}
+
+
+.contact-form input[type="search"],
+.contact-form button {
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.contact-form button {
+    background-color: rgb(72, 131, 151);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+  .contact-form {
+   
+    border: 2px white ; /* Add a solid black border */
+    padding: 20px; /* Add some padding for better appearance */
+    box-shadow: 0 0 10px rgba(7, 6, 6, 0.1); /* Add a shadow effect */
+    margin: 10px -610px 10px 510px;
+}
+
+.faq-section {
+    margin: 20px;
+}
+
+.faq-question {
+    cursor: pointer;
+    font-size: 1.2em;
+    margin: 10px 0;
+    position: relative;
+    color: black; /* Default color for questions */
+}
+
+.faq-question::before {
+    content: '+';
+    position: absolute;
+    left: -20px;
+    top: 0;
+    color: blue; /* Default color for plus sign */
+}
+
+.faq-answer {
+    display: none;
+    margin: 10px 0 20px 0;
+    font-size: 1em;
+}
+
+.faq-br {
+    display: block; /* Ensure the span behaves like a block element */
+    height: 1px; /* Minimal height to make it visible */
+    background-color: transparent; /* Initially transparent */
+    margin: 10px 0; /* Add some margin for spacing */
+    transition: background-color 0.3s; /* Smooth transition for color change */
+}
+
+.faq-question.active {
+    color: blue;
+}
+
+.faq-question.active::before {
+    content: '-';
+}
+
+.faq-br.active {
+    background-color: blue; /* Change color when active */
+}
+.cards-container {
+    display: flex;
+    gap: 5px; /* Reduced gap size */
+    padding: 20px; /* Padding around the container */
+    align-items: flex-start; /* Align items at the top */
+  }
+  
+.card1, .card2 {
+    flex: 1; /* Allow cards to grow equally */
+    border: 2px solid white; /* Add a solid white border */
+    padding: 15px; /* Reduced padding for tighter spacing */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+    background-color: #f9f9f9; /* Optional: Add background color */
+    text-align: left; /* Align text to the left */
+    margin: 10px 240px 10px 10px; /* Remove any extra margin */
+  }
+  
+.card1 h4, .card2 h4 {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between text and image */
+  }
+  
+.quote-image {
+    width: 70px; /* Adjust size as needed */
+    height: auto;
+  }
+  
+.card-images {
+    margin-top: 5px; /* Reduced space between quote and retinal image */
+  }
+  
+.card-images img {
+    display: block;
+    width: 100%; /* Adjust width as needed */
+    max-width: 300px; /* Restrict the maximum width */
+  }
+  
+.card1 h4, .card1 h5, .card2 h4, .card2 h5 {
+    margin: 5px 0; /* Reduced margin between heading and content */
+  }
+
+
+
+.doctors {
+    background-color: #b9dfdc; /* Set background color of cards to white */
+    padding-top: 10px; /* Add a 10 pixel margin on the top */
+}
+
+.doccard {
+    /* Remove the box-shadow from the parent */
+    transition: 0.3s;
+    display: flex; /* Display cards side by side */
+    justify-content: space-between; /* Space between cards */
+    width: calc(100% - 40px); /* Adjust width to fit three cards with margins */
+    margin: 20px 0; /* Remove margin to prevent centering */
+}
+
+.doccard:hover .container1,
+.doccard:hover .container2,
+.doccard:hover .container3 {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Add individual shadows on hover */
+}
+
+/* Add some padding inside the card container */
+.container1, .container2, .container3 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Add initial shadow to each container */
+    padding: 20px 16px; /* Adjust padding */
+    text-align: left; /* Optional: Center align the text */
+    background-color: #ffffff;
+}
+
+.avatar-image {
+    width: 50%; /* Adjust the width as needed */
+    height: auto;
+    border-radius: 50%; /* Optional: Make the image circular */
+    display: block;
+    margin: 10px auto; /* Center the image horizontally */
+}
+.doctors h4 {
+    text-align: center;
+    color: #b55b73;
+}
+.doctors    h3{
+    text-align: center;
+    
+}
+
+.hoscard {
+    display: flex; /* Display cards side by side */
+    justify-content: space-between; /* Space between cards */
+    flex-wrap: wrap; /* Allow cards to wrap */
+}
+
+.containerhos1,
+.containerhos2,
+.containerhos3 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Add initial shadow to each container */
+     /* Adjust padding */
+    text-align: left; /* Align text to the left */
+    background-color: #ffffff; /* White background */
+    flex-basis: calc(33.33% - 20px); /* Set width for each card */
+    margin: 20px -1%820px -20px 20px ; /* Add margin at the bottom */
+}
+
+.containerhos1 img,
+.containerhos2 img,
+.containerhos3 img {
+    width: 10px; /* Adjust image width */
+    height: 500px; /* Maintain aspect ratio */
+    image-resolution: auto;
+    size: 10cm;
+    float: inline-end;
+}
+.hoscard h5 {
+    color: red;
+}
+#colored-word {
+    color: red;
+  }
+.hospitals , .containerhos1, .containerhos2 , .containerhos3{
+text-align: center;
+}  
+#colored-word1 {
+    color: red;
+    text-decoration: underline; /* Add underline */
+  text-decoration-color: red;
+  }
+  .vertical-line {
+    width: 212px; /* Set the width of the line */
+    height: 100px; /* Set the height of the line */
+    border-left: rgb(148, 0, 0); /* Set border style, color, and thickness */
+  }
+  .contact {
+    background-color: rgb(36, 129, 175); /* Set background color for the contact section */
+    color: white; /* Set default font color for the contact section */
+    padding: 20px; /* Add some padding for better spacing */
+    text-align: center; /* Center the content within the section */
+  }
+  
+  .contact button {
+    background-color: rgb(64, 64, 166); /* Set background color for the button */
+    color: white; /* Set font color for the button */
+    border: none; /* Remove default border for cleaner appearance */
+    padding: 10px 20px; /* Adjust padding for button size */
+    cursor: pointer; /* Indicate clickable behavior */
+  }
+  
+  .contact .phone {
+    color: white; /* Set font color for the phone number */
+  }
+  
+  
+
+
+
+
+  .last {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(19, 24, 129);
+    color: white;
+  }
+  
+  .last .itemlast,
+  .last span {
+    /* Adjust flex value as needed (e.g., flex: 2; for wider right section) */
+    flex: 1;
+    padding: 0 5px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  .itemlast h4 {
+    margin: 0;
+  }
+  
+  .itemlast img {
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+  }
+  
+  /* Media query for smaller screens (adjust breakpoint as needed) */
+  @media (max-width: 768px) {
+    .last .itemlast {
+      flex: 1.5; /* Make left section take less space on smaller screens */
+    }
+  
+    .last span {
+      flex: 0.5; /* Make right section take more space on smaller screens */
+    }
+  
+    .last span img {
+      max-width: 100%; /* Set max-width for logos image on smaller screens */
+    }
+  }
+  .secondlast {
+    display: flex; /* Arrange items horizontally */
+    justify-content: space-between; /* Distribute evenly */
+    width: 100%; /* Make the container take full width */
+  }
+  
+  .lists {
+    flex: 1; /* Make each list section take equal space */
+    background-color: rgb(19, 24, 129); /* Blue background */
+    color: white; /* White text color */
+    padding: 10px; /* Padding for content */
+    margin: 0 10px; /* Add some margin between sections */
+  }
+  
+  /* Other styles for lists ul, lists h3, etc. remain the same */
+  
+  .trivial {
+    border-radius: 10px; /* Rounded corners */
+    width: 300px; /* Fixed width for the trivial section */
+    margin: 0 auto; /* Center horizontally */
+    padding: 15px; /* Padding for content */
+    background-color: #f5f5f5; /* Optional background color */
+  }
+  .footer-link {
+    padding-left: 400px; /* Adjust padding as needed */
+  }
+  .footer {
+    background-color: rgb(38, 83, 233);
+    color: white;
+
+  }
